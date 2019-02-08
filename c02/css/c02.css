@@ -30,14 +30,17 @@ body {
 h1, h2 {
     text-indent: 100%;
     white-space: nowrap;
-    overflow: hidden;}
+    overflow: ;
+	}
 
 h1 {
-    width: 278px;
+	color: white;
+    z-index: 100;
+	width: 278px;
     height: 112px;
     margin: 0 auto 0 auto;
     padding-top: 40px;
-    background: url('../images/elderflower-logo.png') no-repeat bottom center;}
+    /*/background: url('../images/elderflower-logo.png') no-repeat bottom center;}*/
 
 h2 {
     width: 286px;
