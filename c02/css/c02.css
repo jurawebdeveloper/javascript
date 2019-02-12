@@ -130,3 +130,6 @@ body:after {
 body {
     border-left: 20px solid #fff;
     border-right: 20px solid #fff;}
+	
+.button {
+	background-color: red;}
