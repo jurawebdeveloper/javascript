@@ -1,5 +1,20 @@
 /* JavaScript & jQuery - Chapter 3: Functions, Methods & Programming */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 body {
 	background-color: #fff;
-	background: url("..images/backgroung.jpg");
+	background: url("../images/background.jpg") no-repeat center center fixed;
+	background-size: 100% 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	background: #1e1b1e;
+	color: grey;
+	width: 230px;
+	height: 180px;
+	float: left;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 0;
 }
