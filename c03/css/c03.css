@@ -109,3 +109,13 @@ p + h2 {
 .false {
   background-image: url("../images/false.png");}
 
+#footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #adffda;}
+
+#footer p {
+  padding: 10px;
+  margin: 0;}
