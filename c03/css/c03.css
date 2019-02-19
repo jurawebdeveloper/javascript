@@ -75,7 +75,7 @@ p + h2 {
   margin: 0;}
 
 #rooms {
-  font-size: 440%;
+  font-size: 340%;
   color: #ffb87a;
   display: inline-block;
   margin: 0;}
@@ -119,3 +119,7 @@ p + h2 {
 #footer p {
   padding: 10px;
   margin: 0;}
+  
+#rate {
+	text-decoration: line-through;
+}
