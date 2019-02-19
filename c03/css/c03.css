@@ -123,3 +123,8 @@ p + h2 {
 #rate {
 	text-decoration: line-through;
 }
+
+#fimOferta {
+	color: orange;
+	font-size: 100%;
+}
