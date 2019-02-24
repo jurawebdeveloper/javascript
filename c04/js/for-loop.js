@@ -14,3 +14,5 @@ for (i=0; i < arrayLength;) {
 
 var elMsg = document.getElementById('resposta');
 elMsg.innerHTML = msg;
+
+document.getElementById('resposta1').textContent = msg;
