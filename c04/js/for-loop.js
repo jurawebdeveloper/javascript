@@ -5,11 +5,11 @@ var i;
 
 var msg = 'Nº de rounds: ' + scores.length + '<br />';
 
-for (i=0; i < arrayLength; i++) {
+for (i=0; i < arrayLength;) {
     roundNumber = (1+i);
     msg += 'Round ' + roundNumber + ': ';
     msg += scores[i] + '<br />';
-    //i = i + 1;
+    i = i + 1;
 }
 
 var elMsg = document.getElementById('resposta');
