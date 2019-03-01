@@ -1,6 +1,7 @@
 var startItem = document.getElementById('two');
-var prevItem = startItem.previousSibling;
-var nextItem = startItem.nextSibling;
+var prevItem = startItem.previousElementSibling;
+var nextItem = startItem.nextElementSibling;
 
-//nextItem.className = 'complete';
-startItem.className = 'complete';
+prevItem.className = 'complete';
+nextItem.className = 'cool';
+//startItem.className = 'complete';
