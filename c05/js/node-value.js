@@ -1,2 +1,7 @@
 var itemTwo = document.getElementById('two');
-itemTwo.className = 'cool';
+var elText = itemTwo.firstChild.nodeValue;
+elText = elText.replace('pine nuts', 'kale');
+itemTwo.firstChild.nodeValue = elText;
+
+
+//itemTwo.className = 'cool';
