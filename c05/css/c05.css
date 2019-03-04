@@ -94,3 +94,6 @@ li {
 #resultado {
 	padding-bottom: 10px;
 }
+#em {
+	display: none;
+}
