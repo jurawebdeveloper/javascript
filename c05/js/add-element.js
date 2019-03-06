@@ -3,5 +3,5 @@ var newText = document.createTextNode('quinoa');
 
 newEl.appendChild(newText);
 
-var position = document.getElementsByTagName('ul')[0];
+var position = document.getElementsByTagName('ul')[1];
 position.appendChild(newEl);
