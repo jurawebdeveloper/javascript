@@ -1,6 +1,5 @@
 <?php
-$nome = ($_GET['username']);
-//print_r($nome);
+	$username = ($_GET['username']);
 ?>
 
-<h2>Nome: <?php echo $nome; ?></h2>
+<h2>Seja bem vindo(a) <?php echo $username ?></h2>
