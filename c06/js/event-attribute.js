@@ -1,0 +1,1 @@
+document.write("<h2>testando script...</h2>");

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>event-attributes</title>
+		<title>event-attribute</title>
 		<meta charset = "utf-8">
 		<link rel = "stylesheet" href = "css/c06.css">
 	</head>
@@ -9,5 +9,14 @@
 	<body>
 		<h1>List King</h1>
 		<h2>New Account</h2>
+		<form method = "post" action = "http://www.example.org/register">
+			<label for = "username">Criar um usuário</label>
+			<input type = "text" id = "username" />
+			<div id = "feedback"></div>
+			<label for = "password">Digite uma senha</label>
+			<input type = "password" id = "password"/>
+			<input type = "submit" value = "Enviar"/>
+		</form>
+		<script src="js/event-attribute.js"></script>
 	</body>
 </html>
