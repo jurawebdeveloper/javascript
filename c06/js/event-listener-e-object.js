@@ -1,12 +1,14 @@
 //document.write('<h2>Teste...</h2>');
-function checkLength() {
+var elUsername = document.getElementById('username');
+
+function checkLength(minimo) {
 	var elMsg = document.getElementById('feedback');
-	if(this.value.length < 5) {
+	if(elUsername.value.length < minimo) {
 		elMsg.innerHTML = 'Campo deve conter no mínimo 5 caracteres';
 	} else {
 		elMsg.innerHTML = '';
 	}
 }
 
-var elUsername = document.getElementById('username');
-elUsername.addEventListener('blur',checkLength,false);
+
+elUsername.addEventListener('blur',function(){checkLength(5);},false);
