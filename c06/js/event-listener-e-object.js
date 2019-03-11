@@ -1,14 +1,18 @@
 //document.write('<h2>Teste...</h2>');
-var elUsername = document.getElementById('username');
+//
 
-function checkLength(minimo) {
-	var elMsg = document.getElementById('feedback');
-	if(elUsername.value.length < minimo) {
-		elMsg.innerHTML = 'Campo deve conter no mínimo 5 caracteres';
+function checkLength(e, minimo) {
+	var el, elMsg;
+	e = window.event;
+	el = e.target;
+	elMsg = el.nextSibling;
+	if(el.value.length < minimo) {
+		elMsg.innerHTML = 'Campo deve conter no mínimo' + minimo + 'caracteres';
+		document.write('<h2>' + elMsg.textContent + '</h2>')
 	} else {
 		elMsg.innerHTML = '';
 	}
 }
 
-
-elUsername.addEventListener('blur',function(){checkLength(5);},false);
+var elUsername = document.getElementById('username');
+elUsername.addEventListener('blur',function(e){checkLength(e, 5);},false);
