@@ -7,10 +7,10 @@ function itemDone(e) {
 	elGrandParent = target.parentNode.parentNode;
 	//elMsg.innerHTML = target.textContent;
 	elGrandParent.removeChild(elParent);
-	e.preventDefoult();
+	e.preventDefault();
 	
 }
 
 var el = document.getElementById('listaCompras');
 
-el.addEventListener('click', function(e){itemDone(e)}, 'false');
+el.addEventListener('click', function(e){itemDone(e);}, 'false');
