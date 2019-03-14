@@ -4,7 +4,8 @@ var elUserneme = document.getElementById('username');
 elUserneme.addEventListener('blur', function(e){checkLength(e,5);}, 'false');
 
 var elForm = document.getElementsByTagName('form')[0];
-elForm.addEventListener('focus', function(e){tipInput(e);}, 'false');
+
+elForm.addEventListener('focus', function(e){tipInput(e, 6);}, 'false');
 
 
 function checkLength(e,minimo){
@@ -18,7 +19,7 @@ function checkLength(e,minimo){
 	}
 }
 
-function tipInput(e) {
+function tipInput(e, minimo) {
 	var target1 = e.target;
-	target1.placeholder = 'digite no mínimo 5 caracteres...';
+	target1.placeholder = 'digite no mínimo ' + minimo + ' caracteres...';
 }
