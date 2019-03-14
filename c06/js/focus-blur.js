@@ -5,7 +5,7 @@ elUserneme.addEventListener('blur', function(e){checkLength(e,5);}, 'false');
 
 var elForm = document.getElementsByTagName('form')[0];
 
-elForm.addEventListener('focus', function(e){tipInput(e, 6);}, 'false');
+elForm.addEventListener('focus', function(e){tipInput(e);}, 'false');
 
 
 function checkLength(e,minimo){
@@ -19,7 +19,12 @@ function checkLength(e,minimo){
 	}
 }
 
-function tipInput(e, minimo) {
+function tipInput(e) {
 	var target1 = e.target;
-	target1.placeholder = 'digite no mínimo ' + minimo + ' caracteres...';
+	if (target1.id == 'username') {
+		texto = 'digite no mínimo 5 caracteres...'
+	} else {
+		texto = 'digite no mínimo 6 caracteres com letras e números'
+	}
+	target1.placeholder = texto;
 }
