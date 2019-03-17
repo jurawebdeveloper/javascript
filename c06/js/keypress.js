@@ -1,14 +1,15 @@
 //document.write('<h2>Teste...</h2>')
 function charCount(e){
-    var entradaTexto, mostraCaractere, contador, ultimaTecla;
+    var entradaTexto, mostraCaractere, contador, ultimaTeclaCod, ekey;
     entradaTexto = document.getElementById('message').value;
     mostraCaractere = document.getElementById('charactersLeft');
     contador = (18 - (entradaTexto.length));
     mostraCaractere.textContent = contador;
 
-    ultimaTecla = document.getElementById('lastKey');
-    ultimaTecla.textContent = 'Última tecla no código ASCII foi: ' + e.keyCode;
-
+    ekey = e.which || e.keyCode;
+    ultimaTeclaCod = document.getElementById('lastKey');
+    ultimaTeclaCod.textContent = 'Última tecla no código ASCII foi: ' + ekey;
+    
 }
 var el = document.getElementById('message');
 el.addEventListener('keypress', charCount,'false');
