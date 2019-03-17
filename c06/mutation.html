@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-	<meta charset = "utf-8">
-    <title>Event Delegation</title>
+    <meta charset = "utf-8">
+    <title>JavaScript &amp; jQuery - Chapter 6: Events - Mutation Events</title>
     <link rel="stylesheet" href="css/c06.css" />
   </head>
   <body>
     <div id="page">
       <h1>List King</h1>
-      <h2>Buy groceries</h2>
-      <ul id="listaCompras">
-        <li class="complete"><a href=""><em>fresh</em> figs</a></li>
-        <li id = 'one' class="complete"><a href="">pine nuts</a></li>
-        <li class="complete"><a href="">honey</a></li>
-        <li class="complete"><a href="">balsamic vinegar</a></li>
+      <h2>Buy Groceries <span id="counter">1</span></h2>
+      <ul id="list">
+        <li>fresh figs</li>
       </ul>
+      <div class="button"><a href="/additem" class="add">Add list item</a></div>
     </div>
-	<h2 id = "mensagem">...</h2>
     <script src="js/mutation.js"></script>
   </body>
 </html>
