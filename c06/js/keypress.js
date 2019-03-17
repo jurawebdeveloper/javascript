@@ -6,6 +6,9 @@ function charCount(e){
     contador = (18 - (entradaTexto.length));
     mostraCaractere.textContent = contador;
 
+    ultimaTecla = document.getElementById('lastKey');
+    ultimaTecla.textContent = 'Última tecla no código ASCII foi: ' + e.keyCode;
+
 }
 var el = document.getElementById('message');
 el.addEventListener('keypress', charCount,'false');
