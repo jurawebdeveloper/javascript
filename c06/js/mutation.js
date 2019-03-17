@@ -13,4 +13,10 @@ function addItem(e) {
     elList.appendChild(newEl);
 }
 
+function updateCount(){
+    listItems =list.getElementsByTagName('li').length;
+    counter.innerHTML = listItems;
+}
+
 addLink.addEventListener('click', addItem, 'false');
+elList.addEventListener('DOMNodeInserted', updateCount, 'false');
