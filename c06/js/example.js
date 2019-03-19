@@ -6,6 +6,7 @@ noteInput = document.getElementById('noteInput');
 
 
 document.addEventListener('click', function(e) {recorderControls(e);}, false);
+noteInput.addEventListener('input', writeLabel, false);
 
 function recorderControls(e) {
 	e = window.event;
@@ -29,4 +30,11 @@ function record(target) {
 function stop(target) {
 	target.setAttribute('data-state', 'record');
 	target.textContent = 'record';
+}
+
+function writeLabel(e) {
+	e = window.event;
+	target = e.target;
+	textEntered = target.value;
+	noteName.textContent = textEntered;
 }
