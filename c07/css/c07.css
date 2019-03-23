@@ -107,4 +107,8 @@ em.seasonal
   background-position: right, center;
   background-repeat: no-repeat;
 }
+#group {
+  margin: 10px;
+  border: 2px solid #fff;
+}
   
