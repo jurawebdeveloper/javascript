@@ -1,7 +1,9 @@
 //document.write('<h2>teste</h2>');
 $(function() {
-	$('li').each(function() {
-		var ids = this.id;
-		$(this).append(' <span class = "order">' + ids + '</span>');
+	var ids = '';
+	var $listItens = $('li'):
+	$listItens.on('mouseover click', function() {
+		ids = this.id;
+		$listItens.childreen('span').remove();
 	});
 });
