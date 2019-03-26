@@ -2,7 +2,7 @@ $(function() {
 	//document.write('<h2>Teste...</h2>');
 	var $h2 = $('h2');
 	$('ul').hide();
-	$h2.append('<a> show</a>');
+	$h2.append('<a class = "show"> show</a>');
 	$h2.on('click', function(){
 		$h2.next().fadeIn(500).children('.hot').addClass('complete');
 		$h2.find('a').fadeout();
