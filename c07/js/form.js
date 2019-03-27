@@ -13,6 +13,10 @@ $(function() {
 	});
 	$newItemForm.on('submit', function(e){
 		e.preventDefault();
-		
+		var $newText = $('input:text').val();
+		$('li:last').after('<li>' + $newText + '</li>');
+		$newItemForm.hide();
+		$newItemButton.show();
+		$textInput.val('');
 	});
 });
