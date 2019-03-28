@@ -5,4 +5,6 @@ $(function() {
 	$p.remove();
 	$clonedQuote.insertAfter('h2');
 	
+	var $moveItem = $('#one').detach();
+	$moveItem.appendTo('ul');
 });
