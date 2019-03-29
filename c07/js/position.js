@@ -6,9 +6,9 @@ $(function() {
 	
 	$window.on('scroll', function(){
 		if ((endZone) < $window.scrollTop()) {
-			$slideAd.animate({'right': '0px'}, 250);
+			$slideAd.animate({'right': '0px'}, 750);
 		} else {
-			$slideAd.stop(true).animate({'right': '-360px'}, 250);
+			$slideAd.stop(true).animate({'right': '-360px'}, 750);
 		}
 	})
 });
