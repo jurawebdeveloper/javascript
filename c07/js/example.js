@@ -8,6 +8,12 @@ $(function() {
 	
 	$('li').hide().each(function(index){
 		$(this).delay(450 * index).fadeIn(1600);
-	})
+	});
+	
+	function updateCount(){
+		var items = '2';
+		$('#counter').text(items);
+	}
+	updateCount();
 });
 	
