@@ -11,8 +11,7 @@ $(function() {
 	});
 	
 	function updateCount(){
-		var items = 2;
-		
+		var items = $('li[class!=complete]').length;
 		$('#counter').text(items);
 		console.log(items);
 	}
