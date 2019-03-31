@@ -11,9 +11,16 @@ $(function() {
 	});
 	
 	function updateCount(){
-		var items = '2';
+		var items = $('li[class!=complete]').lenght;
 		$('#counter').text(items);
 	}
 	updateCount();
+	
+	$newItemButton.show();
+	$newItemForm.hide();
+	$('#showForm').on('click', function() {
+		$newItemButton.hide();
+		$newItemForm.show();
+	});
 });
 	
