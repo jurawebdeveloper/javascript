@@ -2,7 +2,7 @@ $(function() {
 	//document.write('<h2>Teste...</h2>');
 	var $list, $newItemForm, $newItemButton;
 	var item = '';
-	$lits = $('ul');
+	$list = $('ul');
 	$newItemForm = $('#newItemForm');
 	$newItemButton = $('#newItemButton');
 	
@@ -21,6 +21,14 @@ $(function() {
 	$('#showForm').on('click', function() {
 		$newItemButton.hide();
 		$newItemForm.show();
+	});
+	
+	$newItemForm.on('submit', function(e){
+		e.preventDefault();
+		var text = $('input:text').val();
+		$list.append('<li>' + text + '</li>');
+		$('input:text').val('');
+		updateCount();
 	});
 });
 	
