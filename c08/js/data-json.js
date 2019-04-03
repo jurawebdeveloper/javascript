@@ -5,8 +5,8 @@ xhr.onload = function() {
 		
 		var newContent = '';
 		for(var i = 0; i < responseObject.events.length; i++) {
-			newContent += '<div class = "events">';
-			newContent += '';
+			newContent += '<div class = "event">';
+			newContent += '<img src = "'+ responseObject.events[i].map + '" ';
 			newContent += '';
 			newContent += '';
 			newContent += '';
