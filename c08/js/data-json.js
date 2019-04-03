@@ -12,6 +12,7 @@ xhr.onload = function() {
 			newContent += '';
 			newContent += '';
 		}
+		document.getElementById('content').innerHTML = newContent;
 	}
 };
 xhr.open('GET', 'data/data.json', true);
