@@ -10,7 +10,7 @@ xhr.onload = function() {
 			newContent += 'alt = " '+ responseObject.events[i].location + ' "/>';
 			newContent += '<p><b>' + responseObject.events[i].location + '</b><br>';
 			newContent += responseObject.events[i].date + '</p>';
-			newContent += '';
+			newContent += '</div>';
 		}
 		document.getElementById('content').innerHTML = newContent;
 	}
