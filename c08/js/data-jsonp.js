@@ -1,7 +1,7 @@
 function showEvents(data) {
 	var newContent = '';
 	for(var i = 0; i < data.events.length; i++) {
-		newContent += 'teste';
+		newContent += '<div class = "event">';
 		newContent += 'teste';
 		newContent += 'teste';
 		newContent += 'teste';
