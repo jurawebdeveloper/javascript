@@ -1,7 +1,13 @@
-var xhr = new XMLHttpRequest();
-xhr.onload = function() {
-	
+function showEvents(data) {
+	var newContent = '';
+	for(var i = 0; i < data.events.length; i++) {
+		newContent += 'teste';
+		newContent += 'teste';
+		newContent += 'teste';
+		newContent += 'teste';
+		newContent += 'teste';
+		newContent += 'teste';
 	}
-};
-xhr.open('GET', 'data/data.json', true);
-xhr.send(null);
+
+	document.getElementById('content').innerHTML = newContent;
+}
