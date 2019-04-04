@@ -4,7 +4,7 @@ function showEvents(data) {
 		newContent += '<div class = "event">';
 		newContent += '<img src = "' + data.events[i].map + '"';
 		newContent += ' alt = "' + data.events[i].location + '" />';
-		newContent += 'teste';
+		newContent += '<p><b>' + data.events[i].location + '</b><br>';
 		newContent += 'teste';
 		newContent += '</div>';
 	}
