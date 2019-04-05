@@ -6,6 +6,6 @@ $('nav a').on('click', function(e) {
 	$(this).addClass('current');
 	
 	$('#container').remove();
-	$('#content').load(url + '#content').hide().fadeIn('slow');
+	$('#content').load(url + ' #container').hide().fadeIn('slow');
 	
 });
