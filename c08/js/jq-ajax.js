@@ -20,8 +20,8 @@ $('nav a').on('click', function(e){
 		success: function(data) {
 			$content.html($(data).find('#container')).hide().fadeIn(400);
 		},
-		fail: function() {
-			$('#panel').html('<div class = "loading">Por favor, tente novamente mais tarde.</div>');
-		}
+		error: function() {                                     // Show error msg 
+      $content.html('<div class="container">Please try again soon.</div>');
+    }
 	});
 });
