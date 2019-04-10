@@ -6,6 +6,8 @@ function loadRates() {
 		msg += '<div class = "' + key + '">' + key + ': ' + val + '</div>';
 	});
 	$('#rates').html(msg);
+	}).fail(function() {
+		$('#rates').text('Desculpe, não conseguimos carregar os dados.');
 	})
 }
 loadRates();
