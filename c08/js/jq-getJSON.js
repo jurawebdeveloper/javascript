@@ -8,6 +8,14 @@ function loadRates() {
 	$('#rates').html(msg);
 	}).fail(function() {
 		$('#rates').text('Desculpe, não conseguimos carregar os dados.');
-	})
+	}).always(function(){
+		var reload = '<a id = "refresh" href = "#">';
+		reload += '<img src = "img/refresh.png" alt = "refresh" /></a>';
+		$('#reload').html(reload);
+		$('#refresh').on('click', function(e){
+			e.preventDefault();
+			loadRates();
+		});
+	});
 }
 loadRates();
