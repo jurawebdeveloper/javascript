@@ -14,4 +14,15 @@ $(function(){
 		});
 	}
 	loadTimeTable();
+	
+	$('#content').on('click', '#event a', function(e) {
+		e.preventDefault();
+		var loc = this.id.toUpperCase();
+		
+		var newContent = '';
+		for (var i = 0; i < times[loc].length; i++) {
+			newContent += '<li><span class = "time">' + times[loc][i].time + '</span></li>'
+		}
+		$('#sessions').html('<ul>' + newContent + '</ul>');
+	});
 });
