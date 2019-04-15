@@ -27,5 +27,8 @@ $(function(){
 			newContent += times[loc][i].title + '</a></li>';
 		}
 		$('#sessions').html('<ul>' + newContent + '</ul>');
+		$('#event a.current').removeClass('current');
+		$(this).addClass('current');
+		$('#details').text('id details....limpar');
 	});
 });
