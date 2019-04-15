@@ -15,6 +15,7 @@ $(function(){
 	}
 	loadTimeTable();
 	
+	/******************clicar no evento e exibir timetable*********************/
 	$('#content').on('click', '#event a', function(e) {
 		e.preventDefault();
 		var loc = this.id.toUpperCase();
@@ -29,6 +30,28 @@ $(function(){
 		$('#sessions').html('<ul>' + newContent + '</ul>');
 		$('#event a.current').removeClass('current');
 		$(this).addClass('current');
-		$('#details').text('id details....limpar');
+		$('#details').text('');
+	});
+	
+	/********************* clicar em uma sessão para carregar a descrição  ***************************/
+	$('#content').on('click', '#sessions li a', function(e) {
+		e.preventDefault();
+		var fragment = this.href;
+		
+		fragment = fragment.replace('#', ' #'); //acrescentar espaço antes de #
+		$('#details').load(fragment);
+		$('#sessions a.current').removeClass('current');
+		$(this).addClass('current');
+	});
+	
+	/**************** clicar na navegação primária **************************/
+	$('nav a').on('click', function(e) {
+		e.preventDefault();
+		var url = this.href;
+		
+		$('nav a.current').removeClass('current');
+		$(this).addClass('current');
+		$('#container').remove();
+		$('#content').load(url + ' #container').hide().fadeIn('slow');
 	});
 });
