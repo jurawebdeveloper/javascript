@@ -15,7 +15,7 @@ function success(position) {                                // Got location
   msg += '<h3>Latitude:<br>';                               // Create message
   msg += position.coords.latitude + '</h3>';                // Add latitude
   msg += '<h4>Coordenadas Encontradas:<br>';
-  msg += position.coords.latitude + ',' + position.coords.longitude + 'h4';
+  msg += position.coords.latitude + ',' + position.coords.longitude + '<h4>';
   msg += '<h5>Coordenadas corretas: -15.80443,-47.88274 </h5>';
   elMap.innerHTML = msg;                                    // Show location
 }
