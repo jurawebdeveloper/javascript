@@ -13,6 +13,6 @@ $(function() {
 		}
 	});
 	$amount
-		.val('$' + $range.slider('values', 0)     // A $ sign then lower range
+		.val('$' + $range.slider('values', 0) 
     + ' - $' + $range.slider('values', 1));
 });
