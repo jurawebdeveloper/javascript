@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
   <head>
   <meta charset = "utf-8"/>
     <title>angular</title>
@@ -17,6 +17,12 @@
         <textarea ng-model="message"></textarea>
         <input type="submit" value="send message" />
       </form>
+    </div>
+	<div class="two-thirds">
+      <div class="postcard">
+        <div>{{ name }}</div>
+        <p>{{ message }}</p>
+      </div>
     </div>
   </body>
 </html>
