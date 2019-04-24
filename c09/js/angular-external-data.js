@@ -1,6 +1,4 @@
-function BasketCtrl($scope) {
-	$scope.description = 'Single Ticket';
-	$scope.cost = 8;
-	$scope.qty = 1;
+function TimetableCtrl($scope, $http) {
+	$scope.title = 'Session Times';
 }
     
