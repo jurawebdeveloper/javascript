@@ -57,7 +57,9 @@ $(document).on('click', '.thumb', function(e) {
 			'alt': this.title || ''
 		});
 	}
-})
+});
+
+$('.thumb').eq(2).click();
 
 
 
