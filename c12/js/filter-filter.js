@@ -19,13 +19,12 @@ $(function(){
 	];
 	
 	
-	var results = [];
+	function priceRange(person){
+		return(person.rate >= 65 && person.rate <= 90)
+	};
 	
-	people.forEach(function(person){
-		if (person.rate >= 0 && person.rate <= 200) {
-			results.push(person);
-		}
-	});
+	var results = [];
+	results = people.filter(priceRange);
 	
 	var $tableBody = $('<tbody></tbody>');
 	for(var i = 0; i < results.length; i++) {
