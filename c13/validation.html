@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset = "utf-8">
+    <title>validação</title>
+    <link rel="stylesheet" type="text/css" href="css/c13.css" />
+    
+  </head>
+  <body>
+    <div class = "container">
+        <form method = "post" action = "/register" name = "register">
+            <div class = "one-third column">
+                <img src="img/logo.png" alt="logo" id="logo" />
+                <h2 class="welcome">Torne-se um membro</h2>
+                <p class="intro">Welcome to the Super 8 Film Society. We are a group of film enthusiasts who meet up each month to watch old movies on film, in our own private cinema. We also create our own short film each year, which is entered into film competitions worldwide.</p>
+            </div>
+            <div class = "one-third column">
+                <h2>Configurações</h2>
+                <div class="name">
+                    <label for="name" class="required">Nome:</label>
+                    <input type="text" placeholder="Insira seu nome" name="name" id="name" required title="Por faver insira seu nome">
+                </div>
+                <div class="email">
+                    <label for="email" class="required">Email:</label>
+                    <input type="email" placeholder="meuemail@email.com" name="email" id="email" required>
+                </div>
+                <div class="password">
+                    <label for="password" class="required">Senha:</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="password">
+                    <label for="conf-password" class="required">Confirme a senha:</label>
+                    <input type="password" name="conf-password" id="conf-password" required>
+                </div>
+                </fieldset>
+            </div>
+            <div class = "one-third column">
+                <h2>Perfil</h2>
+                
+                <div class="birthday">
+                    <label for="birthday" class="required">Nascimento:</label>
+                    <input type="date" name="birthday" id="birthday" placeholder="yyyy-mm-dd" required>
+                    <div id="consent-container" class="hide">
+                    <label for="parents-consent">Você precisa de uma permissão de seus pais para se cadastrar.
+                        Tick aqui se seu filho pode se cadastrar:</label>
+                    <input type="checkbox" name="parents-consent" id="parents-consent">
+                    </div>
+                </div>
+                
+                <div class="bio">
+                    <label for="bio">Breve Biografia (max 140 caracteres):</label>
+                    <textarea name="bio" id="bio" rows="5" cols="30"></textarea>
+                    <span id="bio-count" class="hide">140</span>
+                </div>
+                <div class="register"><input type="submit" value="Register"></div>
+            </div>
+
+        </form>
+    </div>
+    
+    
+  </body>
+</html>
